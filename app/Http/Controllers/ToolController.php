@@ -2,8 +2,6 @@
 
 namespace p3\Http\Controllers;
 
-use p3\Http\Controllers\Controller;
-
 class ToolController extends Controller
 {
     public function __construct()
@@ -17,5 +15,41 @@ class ToolController extends Controller
   public function getIndex()
   {
       return redirect()->route('welcome');
+  }
+
+  /**
+   * Responds to requests to GET /tools/lorem-ipsum-generator.
+   */
+  public function getLoremIpsumGenerator()
+  {
+    // Test
+    return "Made it to the Lorem Ipsum GET Page";
+  }
+
+  /**
+   * Responds to requests to POST /tools/lorem-ipsum-generator.
+   */
+  public function postLoremIpsumGenerator()
+  {
+    // Test
+    return "Made it to the Lorem Ipsum POST Page";
+  }
+
+  /**
+   * Responds to requests to GET /tools/random-user-generator.
+   */
+  public function getRandomUserGenerator()
+  {
+    // Test
+    return "Made it to the Random User GET Page";
+  }
+
+  /**
+   * Responds to requests to POST /tools/random-user-generator.
+   */
+  public function postRandomUserGenerator()
+  {
+    // Test
+    return "Made it to the Random User POST Page";
   }
 }
