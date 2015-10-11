@@ -12,5 +12,14 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('test');
 });
+
+Route::get('/test', ['as' => 'test', function () {
+    return "TEST!";
+}]);
+
+/*
+ * Logs
+ */
+Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
