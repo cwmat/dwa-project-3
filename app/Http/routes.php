@@ -11,10 +11,21 @@
 |
 */
 
-Route::get('/', function () {
-    return redirect()->route('test');
-});
+/*
+ * Index - welcome page
+ */
+Route::get('/', ['as' => 'welcome', function () {
+    return view('welcome');
+}]);
 
+/*
+ * Index - welcome page
+ */
+Route::controller('/tools','ToolController');
+
+/*
+ * Practice - remove before final production
+ */
 Route::get('/test', ['as' => 'test', function () {
     return "TEST!";
 }]);
