@@ -18,6 +18,12 @@ Sources:
   Icon:
     favicon.cc:
       http://www.favicon.cc/?action=icon&file_id=838007
+
+  Lorem ipsum:
+    https://github.com/Badcow/LoremIpsum
+
+  Fake users:
+    https://github.com/fzaninotto/Faker
  -->
 <html class="no-js" lang="en">
 

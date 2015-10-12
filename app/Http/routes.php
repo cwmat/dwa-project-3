@@ -21,7 +21,7 @@ Route::get('/', ['as' => 'welcome', function () {
 /*
  * Index - welcome page
  */
-Route::controller('/tools','ToolController', [
+Route::controller('/tools', 'ToolController', [
   'getLoremIpsumGenerator' => 'tools.getLorem',
   'getRandomUserGenerator' => 'tools.getUser',
   ]);
@@ -30,7 +30,7 @@ Route::controller('/tools','ToolController', [
  * Practice - remove before final production
  */
 Route::get('/test', ['as' => 'test', function () {
-    return "TEST!";
+    return 'TEST!';
 }]);
 
 /*
