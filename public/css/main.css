@@ -1,9 +1,10 @@
 /* Cool text highlight colors */
-::-moz-selection { /* Code for Firefox */
+
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: #ff00b4;
 }
-
 ::selection {
   color: white;
   background: #ff00b4;
@@ -13,40 +14,38 @@
  * -- BASE STYLES --
  * Most of these are inherited from Base, but I want to change a few.
  */
+
 body {
-    color: #526066;
+  color: #526066;
 }
-
 h2, h3 {
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
 p {
-    line-height: 1.6em;
+  line-height: 1.6em;
 }
-
 
 /*
  * -- Layout Styles --
  */
-.l-content {
-    margin: 0 auto;
-}
 
+.l-content {
+  margin: 0 auto;
+}
 .l-box {
-    padding: 0.5em 2em;
+  padding: 0.5em 2em;
 }
 
 /*
  * -- MENU STYLES --
  * Make the menu have a very faint box-shadow.
  */
-.pure-menu {
-    box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
 
+.pure-menu {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
 
 /*
  * -- BANNER --
@@ -56,206 +55,190 @@ p {
  */
 
 .banner {
-    background: transparent url(../../img/water.jpg) 0 0 no-repeat fixed;
-    background-color: #e17c9c;
-    text-align: center;
-    background-size: cover;
-    filter:
-
-    height: 200px;
-    width: 100%;
-    margin-bottom: 3em;
-    display: table;
+  background: transparent url(../../img/water.jpg) 0 0 no-repeat fixed;
+  background-color: #e17c9c;
+  text-align: center;
+  background-size: cover;
+  filter: height: 200px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+}
+.banner-head {
+  display: table-cell;
+  vertical-align: middle;
+  margin-bottom: 0;
+  font-size: 2em;
+  color: white;
+  font-weight: 500;
+  text-shadow: 0 1px 1px black;
 }
 
-    .banner-head {
-        display: table-cell;
-        vertical-align: middle;
-        margin-bottom: 0;
-        font-size: 2em;
-        color: white;
-        font-weight: 500;
-        text-shadow: 0 1px 1px black;
-    }
-
-
-
 /*
- * -- PRICING TABLE WRAPPER --
- * This element wraps up all the pricing table elements
+ * -- tool TABLE WRAPPER --
+ * This element wraps up all the tool table elements
  */
- .pricing-tables,
- .information {
-    max-width: 980px;
-    margin: 0 auto;
- }
-.pricing-tables {
-    margin-bottom: 3.125em;
-    text-align: center;
+
+.tool-tables, .information {
+  max-width: 980px;
+  margin: 0 auto;
+}
+.tool-tables {
+  margin-bottom: 3.125em;
+  text-align: center;
 }
 
 /*
- * -- PRICING TABLE  --
- * Every pricing table has the .pricing-table class
+ * -- tool TABLE  --
+ * Every tool table has the .tool-table class
  */
-.pricing-table {
-    border: 1px solid #ddd;
-    margin: 0 0.5em 2em;
+
+.tool-table {
+  border: 1px solid #ddd;
+  margin: 0 0.5em 2em;
 }
 
 /*
- * -- PRICING TABLE HEADER COLORS --
- * Choose a different color based on the type of pricing table.
+ * -- tool TABLE HEADER COLORS --
+ * Choose a different color based on the type of tool table.
  */
-.pricing-table-free .pricing-table-header {
-    background: #519251;
-}
 
-.pricing-table-biz .pricing-table-header {
-    background: #2c4985;
+.tool-table-free .tool-table-header {
+  background: #519251;
+}
+.tool-table-biz .tool-table-header {
+  background: #2c4985;
 }
 
 /*
- * -- PRICING TABLE HEADER --
+ * -- tool TABLE HEADER --
  * By default, a header is black/white, and has some styles for its <h2> name.
  */
-.pricing-table-header {
-    background: #111;
-    color: #fff;
+
+.tool-table-header {
+  background: #111;
+  color: #fff;
 }
-
-.pricing-table-header h2 {
-    margin: 0;
-    padding: 2em 0;
-    font-size: 1em;
-    font-weight: normal;
-
+.tool-table-header h2 {
+  margin: 0;
+  padding: 2em 0;
+  font-size: 1em;
+  font-weight: normal;
 }
-
 
 /*
- * -- PRICING TABLE PRICE --
+ * -- tool TABLE PRICE --
  * Styles for the price and the corresponding <span>per month</span>
  */
-.pricing-table-price {
-    font-size: 3em;
-    margin: 0.2em 0 0;
-    font-weight: 100;
-    padding: 1em 0;
-}
 
-.pricing-table-price span {
-    display: block;
-    text-transform: uppercase;
-    font-size: 0.4em;
-    padding: 1em 0;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
-    *color: #fff;
+.tool-table-price {
+  font-size: 3em;
+  margin: 0.2em 0 0;
+  font-weight: 100;
+  padding: 1em 0;
 }
-
-.pricing-table-link a {
+.tool-table-price span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.4em;
+  padding: 1em 0;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  *color: #fff;
+}
+.tool-table-link a {
   padding: 0.75em 0;
   text-decoration: none;
 }
-
-.pricing-table-link a:hover {
+.tool-table-link a:hover {
   text-decoration: underline;
   font-size: 1.01em;
   color: black;
 }
-
-.pricing-table-link a:link,
-.pricing-table-link a:visited {
+.tool-table-link a:link, .tool-table-link a:visited {
   color: white;
 }
-
-.pricing-table-link a:active {
+.tool-table-link a:active {
   color: pink;
 }
 
-
-
 /*
- * -- PRICING TABLE LIST --
- * Each pricing table has a <ul> which is denoted by the .pricing-table-list class
+ * -- tool TABLE LIST --
+ * Each tool table has a <ul> which is denoted by the .tool-table-list class
  */
-.pricing-table-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+
+.tool-table-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-
 /*
- * -- PRICING TABLE LIST ELEMENTS --
- * Styles for the individual list elements within each pricing table
+ * -- tool TABLE LIST ELEMENTS --
+ * Styles for the individual list elements within each tool table
  */
-.pricing-table-list li {
-    padding: 0.8em 0;
-    background: #f7f7f7;
-    border-bottom: 1px solid #e7e7e7;
+
+.tool-table-list li {
+  padding: 0.8em 0;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e7e7e7;
 }
 
-
 /*
- * -- PRICING TABLE BUTTON --
- * Styles for the "Choose" button at the bottom of a pricing table.
+ * -- tool TABLE BUTTON --
+ * Styles for the "Choose" button at the bottom of a tool table.
  * This inherits from Pure Button.
  */
+
 .button-choose {
-    border: 1px solid #ccc;
-    background: #fff;
-    color: #333;
-    border-radius: 2em;
-    font-weight: bold;
-    position: relative;
-    bottom: -1.5em;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  border-radius: 2em;
+  font-weight: bold;
+  position: relative;
+  bottom: -1.5em;
 }
-
 .information-head {
-    color: black;
-    font-weight: 500;
-    text-align: center;
+  color: black;
+  font-weight: 500;
+  text-align: center;
 }
-
 .footer {
-    background: #111;
-    color: #888;
-    text-align: center;
+  background: #111;
+  color: #888;
+  text-align: center;
 }
-    .footer a {
-        color: #ddd;
-    }
-
-
+.footer a {
+  color: #ddd;
+}
 
 /*
  * -- TABLET MEDIA QUERIES --
  * On tablets, we want to slightly adjust the size of the banner
- * text and add some vertical space between the various pricing tables
+ * text and add some vertical space between the various tool tables
  */
+
 @media(min-width: 767px) {
-
-    .banner-head {
-        font-size: 4em;
-    }
-    .pricing-table {
-        margin-bottom: 0;
-    }
-
+  .banner-head {
+    font-size: 4em;
+  }
+  .tool-table {
+    margin-bottom: 0;
+  }
 }
 
 /*
  * -- PHONE MEDIA QUERIES --
  * On phones, we want to reduce the height and font-size of the banner further
  */
+
 @media (min-width: 480px) {
-    .banner {
-        height: 400px;
-    }
-    .banner-head {
-        font-size: 3em;
-    }
+  .banner {
+    height: 400px;
+  }
+  .banner-head {
+    font-size: 3em;
+  }
 }

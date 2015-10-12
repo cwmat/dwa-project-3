@@ -22,8 +22,7 @@ class ToolController extends Controller
    */
   public function getLoremIpsumGenerator()
   {
-    // Test
-    return "Made it to the Lorem Ipsum GET Page";
+    return view('tools.lorem-ipsum-generator');
   }
 
   /**
@@ -40,8 +39,7 @@ class ToolController extends Controller
    */
   public function getRandomUserGenerator()
   {
-    // Test
-    return "Made it to the Random User GET Page";
+    return view('tools.random-user-generator');
   }
 
   /**

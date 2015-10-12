@@ -21,7 +21,10 @@ Route::get('/', ['as' => 'welcome', function () {
 /*
  * Index - welcome page
  */
-Route::controller('/tools','ToolController');
+Route::controller('/tools','ToolController', [
+  'getLoremIpsumGenerator' => 'tools.getLorem',
+  'getRandomUserGenerator' => 'tools.getUser',
+  ]);
 
 /*
  * Practice - remove before final production
