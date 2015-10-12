@@ -1,0 +1,10 @@
+.banner {
+  background: transparent url(../../img/mountains.jpg) 0 0 no-repeat fixed;
+  background-color: #7ea6bf;
+  text-align: center;
+  background-size: cover;
+  filter: height: 200px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+}

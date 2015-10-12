@@ -1,0 +1,29 @@
+.results-section .pure-input-1 {
+  max-width: 50em;
+  height: 7em;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.results-section .pure-form input[readonly],
+.results-section .pure-form select[readonly],
+.results-section .pure-form textarea[readonly] {
+  border-color: #ccc;
+  background-color: white;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  font-size: 1.25em;
+}
+
+.results-section .pure-form input[readonly]:focus {
+  border-color: #ff7f7f;
+}
+
+.is-center {
+  text-align: center;
+}
+
+.generate-button {
+  margin: 2em 0;
+}

@@ -30,7 +30,7 @@ Sources:
   <meta name="description" content="Project 3 for HES DWA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="icon" href="/favicon.ico"> {{-- Stylesheets --}}
+  <link rel="icon" href= {{ asset('/favicon.ico') }} > {{-- Stylesheets --}}
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
   <!--[if lte IE 8]>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
@@ -39,12 +39,12 @@ Sources:
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
   <!--<![endif]-->
   <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/main-old-ie.css">
+    <link rel="stylesheet" href= {{ asset('css/main-old-ie.css') }} >
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href= {{ asset('css/main.css') }} >
   <!--<![endif]-->
-  <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  <script src= {{ asset('js/vendor/modernizr-2.8.3.min.js') }} ></script>
   {{-- Yield any page specific files --}} @yield('head')
 </head>
 
@@ -65,9 +65,9 @@ Sources:
   {{-- Import JS --}}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')
+    window.jQuery || document.write('<script src= {{ asset('js/vendor/jquery-1.11.3.min.js') }} ><\/script>')
   </script>
-  <script src="js/main.js"></script>
+  <script src= {{ asset('js/main.js') }} ></script>
 
   <!-- Google Analytics -->
   <script>
