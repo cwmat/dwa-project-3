@@ -36,8 +36,7 @@
       <div class="l-box">
         <h3 class="information-head">What does this do?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation.
+          Lorem Ipsum text is randomly generated 'filler' text that you can use as a placeholder in your applications!  Select the number of paragraphs you want generated below in the <span class="color-text">LOREM IPSUM OPTIONS</span> and hit the <span class="color-text">GENERATE</span> button.  The site will spit out your randomly generated text (with some help from <span class="text-link"><a href="https://github.com/Badcow/LoremIpsum" target="_blank">Badcow/LoremIpsum</a></span>) for you to copy and paste wherever you'd like.
         </p>
       </div>
     </div>
@@ -58,50 +57,17 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-
       <br>
-    {{-- </div> --}}
-
-    {{-- <div class="pure-u-1 is-center generate-button"> --}}
     <div id="generate-button">
-
-
       <button type="submit" class="pure-button pure-button-primary">
         GENERATE
       </button>
-    </div> <!-- AHHH -->
-    {{-- </div> --}}
-  {{-- </div> --}}
-
-  {{-- <div class="pure-g wrapper is-center">
-    <div class="pure-u-1 results-section"> --}}
-      {{-- <div class="content"> --}}
+    </div>
         <h1 class="content-head">Here is your Lorem Ipsum text!</h1>
-        {{-- <form class="pure-form"> --}}
-        {{-- <div id="generated-text"> --}}
-
-
-          {{-- <input
-            class="pure-input-1 pure-input-rounded"
-            type="text"
-            readonly
-            placeholder="Temp"
-            value="@yield('generated-text', "Hit GENERATE and try it out!")"> --}}
-            {{-- <textarea
-              rows="10"
-              cols="30"
-              class="pure-input-1 pure-input-rounded"
-              readonly
-              placeholder="Temp"
-              value="@yield('generated-text', "Hit GENERATE and try it out!")">
-              @yield('generated-text', "Hit GENERATE and try it out!")
-            </textarea> --}}
           <div id="output">
             @yield('generated-text', "Hit GENERATE and try it out!")
           </div>
         </form>
-      {{-- </div>    <!-- AHHH --> --}}
       </div>
     </div>
-  {{-- </div> --}}
 @stop

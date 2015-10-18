@@ -63,8 +63,8 @@ Sources:
   {{-- Yield content --}} @yield('content') {{-- Footer --}}
   <div class="footer l-box">
     <p>
-      <a href="https://github.com/cwmat/dwa-project-3">Github</a>
-      <a href='http://p1.cwmat-dwa.me'>Back to project home</a>.
+      <a href="https://github.com/cwmat/dwa-project-3" target="_blank">Github</a>
+      <a href='http://p1.cwmat-dwa.me' target="_blank">Back to project home</a>.
     </p>
   </div>
 
