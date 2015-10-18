@@ -24,6 +24,8 @@ Route::get('/', ['as' => 'welcome', function () {
 Route::controller('/tools', 'ToolController', [
   'getLoremIpsumGenerator' => 'tools.getLorem',
   'getRandomUserGenerator' => 'tools.getUser',
+  'postLoremIpsumGenerator' => 'tools.postLorem',
+  'postRandomUserGenerator' => 'tools.postUser',
   ]);
 
 /*

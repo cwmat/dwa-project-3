@@ -48,34 +48,60 @@
       <h3>Lorem Ipsum Options</h3>
     </header>
     <div class="pure-u-1 is-center">
+      <form class="pure-form" method="POST" action="{{ route('tools.postLorem') }}">
+      <input type='hidden' name='_token' value='{{ csrf_token() }}'>
       <label for="min-words">Number of paragraphs:</label>
       <select id="min-words" class="pure-input-1-2" data-option="min-words" name="min-words">
-        <option value="2" selected="selected">1</option>
+        <option value="1" selected="selected">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-    </div>
 
-    <div class="pure-u-1 is-center generate-button">
-      <button type="submit" class="pure-button pure-button-primary">GENERATE</button>
-    </div>
-  </div>
+      <br>
+    {{-- </div> --}}
 
-  <div class="pure-g wrapper is-center">
-    <div class="pure-u-1 results-section">
-      <div class="content">
+    {{-- <div class="pure-u-1 is-center generate-button"> --}}
+    <div id="generate-button">
+
+
+      <button type="submit" class="pure-button pure-button-primary">
+        GENERATE
+      </button>
+    </div> <!-- AHHH -->
+    {{-- </div> --}}
+  {{-- </div> --}}
+
+  {{-- <div class="pure-g wrapper is-center">
+    <div class="pure-u-1 results-section"> --}}
+      {{-- <div class="content"> --}}
         <h1 class="content-head">Here is your Lorem Ipsum text!</h1>
-        <form class="pure-form">
-          <input
+        {{-- <form class="pure-form"> --}}
+        {{-- <div id="generated-text"> --}}
+
+
+          {{-- <input
             class="pure-input-1 pure-input-rounded"
             type="text"
             readonly
             placeholder="Temp"
-            value="Hit GENERATE and try it out!">
+            value="@yield('generated-text', "Hit GENERATE and try it out!")"> --}}
+            {{-- <textarea
+              rows="10"
+              cols="30"
+              class="pure-input-1 pure-input-rounded"
+              readonly
+              placeholder="Temp"
+              value="@yield('generated-text', "Hit GENERATE and try it out!")">
+              @yield('generated-text', "Hit GENERATE and try it out!")
+            </textarea> --}}
+          <div id="output">
+            @yield('generated-text', "Hit GENERATE and try it out!")
+          </div>
         </form>
+      {{-- </div>    <!-- AHHH --> --}}
       </div>
     </div>
-  </div>
+  {{-- </div> --}}
 @stop

@@ -2,6 +2,8 @@
 
 namespace p3\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class ToolController extends Controller
 {
     public function __construct()
@@ -28,10 +30,12 @@ class ToolController extends Controller
   /**
    * Responds to requests to POST /tools/lorem-ipsum-generator.
    */
-  public function postLoremIpsumGenerator()
+  public function postLoremIpsumGenerator(Request $request)
   {
     // Test
-    return "Made it to the Lorem Ipsum POST Page";
+    // return "Made it to the Lorem Ipsum POST Page " . $request->input('min-words');
+    $minWords = $request->input('min-words');
+    return view('tools.post-lorem-ipsum', ['minWords' => $minWords]);
   }
 
   /**

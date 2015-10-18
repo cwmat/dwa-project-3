@@ -3,11 +3,11 @@
 ::-moz-selection {
   /* Code for Firefox */
   color: white;
-  background: #ff00b4;
+  background: #7e96b0;
 }
 ::selection {
   color: white;
-  background: #ff00b4;
+  background: #7e96b0;
 }
 
 /*
