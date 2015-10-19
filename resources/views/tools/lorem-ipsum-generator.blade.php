@@ -49,7 +49,7 @@
     <div class="pure-u-1 is-center">
       <form class="pure-form" method="POST" action="{{ route('tools.postLorem') }}">
       <input type='hidden' name='_token' value='{{ csrf_token() }}'>
-      <label for="min-words">Number of paragraphs:</label>
+      <label for="min-words"><span class="color-text">Number of paragraphs:</span></label>
       <select id="min-words" class="pure-input-1-2" data-option="min-words" name="min-words">
         <option value="1" selected="selected">1</option>
         <option value="2">2</option>

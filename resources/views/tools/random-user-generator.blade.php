@@ -45,37 +45,86 @@
 
   <div class="pure-g is-center">
     <header class="pure-u-1">
-      <h3>Random User Options</h3>
+      <h3>Lorem Ipsum Options</h3>
     </header>
     <div class="pure-u-1 is-center">
-      <label for="min-words">Number of users:</label>
-      <select id="min-words" class="pure-input-1-2" data-option="min-words" name="min-words">
-        <option value="2" selected="selected">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
+      <form class="pure-form" method="POST" action="{{ route('tools.postLorem') }}">
+      {{-- Required hidden input --}}
+      <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
-    <div class="pure-u-1 is-center generate-button">
-      <button type="submit" class="pure-button pure-button-primary">GENERATE</button>
-    </div>
-  </div>
+      <label for="num-users"><span class="color-text">Number of users:</span></label>
+      <input
+      id="num-users"
+      type="num-users"
+      name="num-users"
+      data-option="num-users"
+      value="@yield('num-users', 5)"
+      maxlength="2"
+      size="3">
+      <div id="error-report"></div>
 
-  <div class="pure-g wrapper is-center">
-    <div class="pure-u-1 results-section">
-      <div class="content">
-        <h1 class="content-head">Here are your random users!</h1>
-        <form class="pure-form">
+    <br>
+    <div class="radio-options">
+      <div class="pure-u-1">
+        <h4>ADD ADDITIONAL INFORMATION ?</h4>
+      </div>
+    <div class="pure-u-1 pure-u-md-1-4">
+      <label for="add-bday" class="pure-checkbox">
+        <div>
+          <span class="color-text">Birthday</span>
+        </div>
+      </label>
+        <div>
           <input
-            class="pure-input-1 pure-input-rounded"
-            type="text"
-            readonly
-            placeholder="Temp"
-            value="Hit GENERATE and try it out!">
+          id="add-bday"
+          type="checkbox"
+          name="add-bday"
+          data-option="add-bday">
+        </div>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-4">
+      <label for="add-location" class="pure-checkbox">
+        <div>
+          <span class="color-text">Location</span>
+        </div>
+      </label>
+        <div>
+          <input
+          id="add-location"
+          type="checkbox"
+          name="add-location"
+          data-option="add-location">
+        </div>
+    </div>
+
+    <div class="pure-u-1 pure-u-md-1-4">
+      <label for="add-blurb" class="pure-checkbox">
+        <div>
+          <span class="color-text">Profile Blurb</span>
+        </div>
+      </label>
+        <div>
+          <input
+          id="add-blurb"
+          type="checkbox"
+          name="add-blurb"
+          data-option="add-blurb">
+        </div>
+      </div>
+    </div>
+
+    <div id="generate-button">
+      <button type="submit" class="pure-button pure-button-primary">
+        GENERATE
+      </button>
+    </div>
+
+        <h1 class="content-head">Here is your Lorem Ipsum text!</h1>
+          <div id="output">
+            @yield('generated-text', "Hit GENERATE and try it out!")
+          </div>
         </form>
       </div>
     </div>
-  </div>
 @stop

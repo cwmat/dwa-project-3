@@ -27,3 +27,52 @@
 .generate-button {
   margin: 2em 0;
 }
+
+#output {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #614f41;
+  font-size: 1em;
+  min-height: 125px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  padding: 45px;
+  position: relative;
+  text-align: left;
+  width: 610px;
+}
+
+#output:focus {
+  border-color: #ff7f7f;
+}
+
+#min-words {
+  width: 4em;
+}
+
+.color-text {
+  color: #0078e7;
+  font-weight: bold;
+}
+
+.text-link a:link,
+.text-link a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff00b4;
+}
+
+.text-link a:hover {
+  text-decoration: underline;
+  font-size: 1.01em;
+  color: black;
+}
+
+.text-link a:active {
+  color: pink;
+}
+
+#generate-button {
+  margin-top: 1em;
+}
