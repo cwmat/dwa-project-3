@@ -52,7 +52,7 @@ class ToolController extends Controller
   {
       // Validate request
     $this->validate($request, [
-      'num-users' => 'required|max:2|numeric',
+      'num-users' => 'digits_between:1,99|required|min:1|max:2',
     ]);
 
       $numUsers = $request->input('num-users');

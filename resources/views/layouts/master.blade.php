@@ -62,10 +62,12 @@ Sources:
 
   {{-- Yield content --}} @yield('content') {{-- Footer --}}
   <div class="footer l-box">
-    <p>
-      <a href="https://github.com/cwmat/dwa-project-3" target="_blank">Github</a>
-      <a href='http://p1.cwmat-dwa.me' target="_blank">Back to project home</a>.
-    </p>
+    <div class="pure-u-1 pure-u-md-1-3">
+      <a href="https://github.com/cwmat/dwa-project-3" target="_blank">Github for this project</a>
+    </div>
+    <div class="pure-u-1 pure-u-md-1-3">
+      <a href='http://p1.cwmat-dwa.me' target="_blank">Back to P1 project home</a>.
+    </div>
   </div>
 
   {{-- Import JS --}}

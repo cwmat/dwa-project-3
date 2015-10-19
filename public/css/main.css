@@ -175,7 +175,7 @@ p {
 }
 
 /*
- * -- tool TABLE LIST ELEMENTS --
+ * -- Tool TABLE LIST ELEMENTS --
  * Styles for the individual list elements within each tool table
  */
 
@@ -186,7 +186,7 @@ p {
 }
 
 /*
- * -- tool TABLE BUTTON --
+ * -- Tool TABLE BUTTON --
  * Styles for the "Choose" button at the bottom of a tool table.
  * This inherits from Pure Button.
  */
@@ -212,6 +212,32 @@ p {
 }
 .footer a {
   color: #ddd;
+}
+
+/*
+ * -- Colored text and "special" links --
+ */
+
+.color-text {
+  color: #0078e7;
+  font-weight: bold;
+}
+
+.text-link a:link,
+.text-link a:visited {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff00b4;
+}
+
+.text-link a:hover {
+  text-decoration: underline;
+  font-size: 1.01em;
+  color: black;
+}
+
+.text-link a:active {
+  color: pink;
 }
 
 /*

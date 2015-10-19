@@ -51,28 +51,6 @@
   width: 4em;
 }
 
-.color-text {
-  color: #0078e7;
-  font-weight: bold;
-}
-
-.text-link a:link,
-.text-link a:visited {
-  font-weight: bold;
-  text-decoration: none;
-  color: #ff00b4;
-}
-
-.text-link a:hover {
-  text-decoration: underline;
-  font-size: 1.01em;
-  color: black;
-}
-
-.text-link a:active {
-  color: pink;
-}
-
 #generate-button {
   margin-top: 1em;
 }

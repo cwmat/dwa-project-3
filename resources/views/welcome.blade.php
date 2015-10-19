@@ -32,8 +32,13 @@
       <div class="l-box">
         <h3 class="information-head">Tools</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation.
+          <span class="color-text">Developer's Best Friend</span> provides two (for now) tools to help developers deal with common tedious tasks.  These tools attempt to automate repetitive tasks and are freely available for developers to use for their projects.
+        </p>
+        <p>
+          So far there are two tools, <span class="color-text">Lorem Ipsum Generator</span> and <span class="color-text">Random User Generator</span>.  <span class="color-text">Lorem Ipsum Generator</span> produces random filler text of varying lengths to use as a placeholder for projects.  <span class="color-text">Random User Generator</span> lays out several options to choose from that allow you to randomly produce fake users with fake information.
+        </p>
+        <p>
+          These projects were built with the help of these great <span class="color-text">PHP packages</span>: <span class="text-link"><a href="https://github.com/fzaninotto/Faker" target="_blank">fzaninotto/Faker</a></span> and <span class="text-link"><a href="https://github.com/Badcow/LoremIpsum" target="_blank">Badcow/LoremIpsum</a></span>.  Click below or in the nav bar to try them out!
         </p>
       </div>
     </div>

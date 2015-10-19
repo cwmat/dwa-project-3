@@ -36,8 +36,7 @@
       <div class="l-box">
         <h3 class="information-head">What does this do?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-          enim ad minim veniam, quis nostrud exercitation.
+          Sometimes for testing purposes you may need to create random user profiles for your applications.  This can become tedious when you have to create several of these.  This application helps automate the process with the help of <span class="text-link"><a href="https://github.com/fzaninotto/Faker" target="_blank">fzaninotto/Faker</a></span>.  Set the options in the <span class="color-text">RANDOM USER OPTIONS</span> and then hit the <span class="color-text">GENERATE</span> button.  Be sure to only include numbers in the <span class="color-text">Number of users</span> option.  Your users will show up below!
         </p>
       </div>
     </div>
