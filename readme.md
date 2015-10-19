@@ -1,27 +1,33 @@
-## Laravel PHP Framework
+# Charles (Chaz) Mateer Project 3: HES DWA Fall 2015
+## Developer's Best Friend
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+### Live URL to the site
+- [p3.cwmat-dwa.me](http://p3.cwmat-dwa.me/)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+### Description
+> This web application, called Developer's Best Friend, includes a Lorem Ipsum Generator and a Random User Generator.  The landing page gives a brief description of the app with links to the two tools.  Each tool provides options that the user can alter to change the behavior of the tools.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+### Link to screencast
+- [Screencast]()
 
-## Official Documentation
+### Professor/TA Details
+None so far.
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+### Sources
+    Laravel 5: http://laravel.com/
 
-## Contributing
+    Lorem Ipsum PHP package: https://github.com/Badcow/LoremIpsum
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+    Random User PHP package: https://github.com/fzaninotto/Faker
 
-## Security Vulnerabilities
+    HTML5-Boilerplate (comes with jquery and modernizer): https://html5boilerplate.com/
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+    Pure CSS: http://purecss.io/
 
-### License
+    Open source images: https://unsplash.com/
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+    Comical filler text: http://www.cheeseipsum.co.uk/
+
+    Random Words: http://listofrandomwords.com/index.cfm?blist
+
+    More random words: http://www.paulnoll.com/Books/Clear-English/words-01-02-hundred.html
