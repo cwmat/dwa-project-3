@@ -45,10 +45,10 @@
 
   <div class="pure-g is-center">
     <header class="pure-u-1">
-      <h3>Lorem Ipsum Options</h3>
+      <h3>Random User Options</h3>
     </header>
     <div class="pure-u-1 is-center">
-      <form class="pure-form" method="POST" action="{{ route('tools.postLorem') }}">
+      <form class="pure-form" method="POST" action="{{ route('tools.postUser') }}">
       {{-- Required hidden input --}}
       <input type='hidden' name='_token' value='{{ csrf_token() }}'>
 
@@ -58,7 +58,7 @@
       type="num-users"
       name="num-users"
       data-option="num-users"
-      value="@yield('num-users', 5)"
+      value="5"
       maxlength="2"
       size="3">
       <div id="error-report"></div>
@@ -120,7 +120,7 @@
       </button>
     </div>
 
-        <h1 class="content-head">Here is your Lorem Ipsum text!</h1>
+        <h1 class="content-head">Here is your randomly generated users!</h1>
           <div id="output">
             @yield('generated-text', "Hit GENERATE and try it out!")
           </div>

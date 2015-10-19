@@ -32,8 +32,6 @@ class ToolController extends Controller
    */
   public function postLoremIpsumGenerator(Request $request)
   {
-    // Test
-    // return "Made it to the Lorem Ipsum POST Page " . $request->input('min-words');
     $minWords = $request->input('min-words');
     return view('tools.post-lorem-ipsum', ['minWords' => $minWords]);
   }
@@ -49,9 +47,24 @@ class ToolController extends Controller
   /**
    * Responds to requests to POST /tools/random-user-generator.
    */
-  public function postRandomUserGenerator()
+  public function postRandomUserGenerator(Request $request)
   {
-    // Test
-    return "Made it to the Random User POST Page";
+    // Validate request
+    $this->validate($request, [
+      'num-users' => 'required|max:2|numeric'
+    ]);
+
+    $numUsers = $request->input('num-users');
+    $addBday = $request->input('add-bday');
+    $addLocation = $request->input('add-location');
+    $addBlurb = $request->input('add-blurb');
+
+    return view('tools.post-random-user',
+    [
+      'numUsers' => $numUsers,
+      'addBday' => $addBday,
+      'addLocation' => $addLocation,
+      'addBlurb' => $addBlurb,
+      ]);
   }
 }
