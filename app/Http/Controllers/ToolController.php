@@ -24,7 +24,7 @@ class ToolController extends Controller
    */
   public function getLoremIpsumGenerator()
   {
-    return view('tools.lorem-ipsum-generator');
+      return view('tools.lorem-ipsum-generator');
   }
 
   /**
@@ -32,8 +32,9 @@ class ToolController extends Controller
    */
   public function postLoremIpsumGenerator(Request $request)
   {
-    $minWords = $request->input('min-words');
-    return view('tools.post-lorem-ipsum', ['minWords' => $minWords]);
+      $minWords = $request->input('min-words');
+
+      return view('tools.post-lorem-ipsum', ['minWords' => $minWords]);
   }
 
   /**
@@ -41,7 +42,7 @@ class ToolController extends Controller
    */
   public function getRandomUserGenerator()
   {
-    return view('tools.random-user-generator');
+      return view('tools.random-user-generator');
   }
 
   /**
@@ -49,17 +50,17 @@ class ToolController extends Controller
    */
   public function postRandomUserGenerator(Request $request)
   {
-    // Validate request
+      // Validate request
     $this->validate($request, [
-      'num-users' => 'required|max:2|numeric'
+      'num-users' => 'required|max:2|numeric',
     ]);
 
-    $numUsers = $request->input('num-users');
-    $addBday = $request->input('add-bday');
-    $addLocation = $request->input('add-location');
-    $addBlurb = $request->input('add-blurb');
+      $numUsers = $request->input('num-users');
+      $addBday = $request->input('add-bday');
+      $addLocation = $request->input('add-location');
+      $addBlurb = $request->input('add-blurb');
 
-    return view('tools.post-random-user',
+      return view('tools.post-random-user',
     [
       'numUsers' => $numUsers,
       'addBday' => $addBday,
