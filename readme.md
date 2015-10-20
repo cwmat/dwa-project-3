@@ -8,7 +8,7 @@
 > This web application, called Developer's Best Friend, includes a Lorem Ipsum Generator and a Random User Generator.  The landing page gives a brief description of the app with links to the two tools.  Each tool provides options that the user can alter to change the behavior of the tools.
 
 ### Link to screencast
-- [Screencast]()
+- [Screencast](http://screencast.com/t/YnbmT5ZLzbU)
 
 ### Professor/TA Details
 None so far.
