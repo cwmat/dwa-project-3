@@ -61,7 +61,7 @@
 
     <div class="radio-options">
       <div class="pure-u-1">
-        <h4>ADD ADDITIONAL INFORMATION ?</h4>
+        <h4>How long should each paragraph be ?</h4>
       </div>
       <div class="pure-u-1 pure-u-md-1-4">
       <label for="size-option" class="pure-checkbox">
