@@ -33,8 +33,12 @@ class ToolController extends Controller
   public function postLoremIpsumGenerator(Request $request)
   {
       $minWords = $request->input('min-words');
+      $sizeOption = $request->input('size-option');
 
-      return view('tools.post-lorem-ipsum', ['minWords' => $minWords]);
+      return view('tools.post-lorem-ipsum', [
+        'minWords' => $minWords,
+        'sizeOption' => $sizeOption,
+      ]);
   }
 
   /**

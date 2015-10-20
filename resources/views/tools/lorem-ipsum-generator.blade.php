@@ -57,7 +57,62 @@
         <option value="4">4</option>
         <option value="5">5</option>
       </select>
-      <br>
+    <br>
+
+    <div class="radio-options">
+      <div class="pure-u-1">
+        <h4>ADD ADDITIONAL INFORMATION ?</h4>
+      </div>
+      <div class="pure-u-1 pure-u-md-1-4">
+      <label for="size-option" class="pure-checkbox">
+        <div>
+          <span class="color-text">Short</span>
+        </div>
+      </label>
+        <div>
+          <input
+          id="short-option"
+          type="radio"
+          name="size-option"
+          data-option="size-option"
+          value="small-option"
+          checked="checked">
+        </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-md-1-4">
+        <label for="size-option" class="pure-checkbox">
+          <div>
+            <span class="color-text">Medium</span>
+          </div>
+        </label>
+          <div>
+            <input
+            id="med-option"
+            type="radio"
+            name="size-option"
+            data-option="size-option"
+            value="medium-option">
+          </div>
+      </div>
+
+      <div class="pure-u-1 pure-u-md-1-4">
+        <label for="size-option" class="pure-checkbox">
+          <div>
+            <span class="color-text">Long</span>
+          </div>
+        </label>
+        <div>
+          <input
+          id="long-option"
+          type="radio"
+          name="size-option"
+          data-option="size-option"
+          value="long-option">
+        </div>
+      </div>
+    </div>
+
     <div id="generate-button">
       <button type="submit" class="pure-button pure-button-primary">
         GENERATE
